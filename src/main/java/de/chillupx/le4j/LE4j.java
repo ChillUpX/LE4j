@@ -23,23 +23,12 @@ import java.security.cert.X509Certificate;
 @RequiredArgsConstructor
 public class LE4j {
 
-    /* Finals */
     public static final String ACME_LETSENCRYPT_STAGING = "acme://letsencrypt.org/staging";
     public static final String ACME_LETSENCRYPT = "acme://letsencrypt.org";
 
     public final String domain;
     public final String workdir;
     @Builder.Default public final boolean useStaging = false;
-
-    public static void main(String[] args) throws InterruptedException, AcmeException, IOException, CertificateException, NoSuchAlgorithmException, KeyStoreException {
-
-        LE4j.builder()
-                .domain("test.gsac.host")
-                .useStaging(true)
-                .workdir("C:/users/ronyt/Desktop/test123")
-                .build()
-                .obtainCert();
-    }
 
     public void obtainCert() throws IOException, AcmeException, InterruptedException, KeyStoreException, CertificateException, NoSuchAlgorithmException {
         //Create Account-Keypair if none exists
