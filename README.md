@@ -22,9 +22,17 @@ With jitpack you can use LE4j in your maven project.
 ## Usage
 ``` Java
 LE4j.builder()
-      .domain("test.domain.tld")
-      .useStaging(false)
-      .workdir("/path/to/work/at")
-      .build()
-      .obtainCert();
+          .accountKeyPath("/path/to/account/key/folder")
+          .domainKeyPath("/path/to/domain/key/folder")
+          .domainCertPath("/path/to/domain/crt/folder")
+          .domainKeystorePath("/path/to/keystore/folder")
+          .domain("domain.tld")
+          .organisation("organisation")
+          .keystorePassword("secret")
+          .keySize(2048) //Optional
+          .timeBetweenRetry(3000L) //Optional
+          .useStaging(false) //Optional
+          .writeCsrToFile(false) //Optional
+          .build()
+      .optainCert();
 ```
