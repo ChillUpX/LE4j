@@ -36,3 +36,7 @@ LE4j.builder()
           .build()
       .optainCert();
 ```
+
+## License
+
+_LE4j_ is open source software. The source code is distributed under the terms of [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
