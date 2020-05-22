@@ -35,6 +35,7 @@ import java.security.KeyStore;
 import java.security.cert.X509Certificate;
 
 @Slf4j
+@Builder
 @RequiredArgsConstructor
 public class LE4j {
 
