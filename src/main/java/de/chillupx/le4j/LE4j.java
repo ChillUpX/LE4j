@@ -77,8 +77,10 @@ public class LE4j {
         // Authorize Order
         authorizeOrder(order);
 
+        // Execute ORder
         KeyPair domainKeyPair = executeOrder(order);
 
+        // Write certificate and keystore
         writeCertificate(order, domainKeyPair);
     }
 
@@ -146,7 +148,7 @@ public class LE4j {
     }
 
     /**
-     * This method prepares a CSR request.
+     * This method prepares a CSR.
      *
      * If writeCsrToFile is true the csr data will get written into a file at domainKeyPath.
      *
