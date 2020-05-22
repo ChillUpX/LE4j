@@ -46,7 +46,7 @@ public class LE4j {
     @Builder.Default private final boolean useStaging = false;
     @Builder.Default private final boolean writeCsrToFile = false;
     @Builder.Default private final long timeBetweenRetry = 3000;
-    @Builder.Default private final String keystorePassword = "secure";
+    private final String keystorePassword;
     private final String domain;
     private final String organisation;
     private final String accountKeyPath;
