@@ -34,7 +34,7 @@ LE4j.builder()
           .useStaging(false) //Optional
           .writeCsrToFile(false) //Optional
           .build()
-      .optainCert();
+      .obtainCert();
 ```
 
 ## License
