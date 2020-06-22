@@ -15,7 +15,7 @@ With jitpack you can use LE4j in your maven project.
 <dependency>
     <groupId>com.github.ChillUpX</groupId>
     <artifactId>LE4j</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
 </dependency>
 ```
 
