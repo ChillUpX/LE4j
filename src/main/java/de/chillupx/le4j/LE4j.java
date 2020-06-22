@@ -67,7 +67,7 @@ public class LE4j {
      * @throws Exception If the proccess failes several exceptions can be throw. All should
      * contain an explaining message so you know what went wrong.
      */
-    public void optainCert() throws Exception {
+    public void obtainCert() throws Exception {
         // Setup account
         Account account = setupAccount();
 
